@@ -189,7 +189,7 @@ html.js{scroll-padding-top:var(--anchor-offset,14rem);}
 .chip:hover{background:var(--surface);}
 .chip[aria-pressed="true"]{background:var(--branch-text);color:var(--on-branch);
   border-color:var(--branch-text);font-weight:600;}
-.tally{font-size:.875rem;color:var(--ink-muted);margin-top:.6rem;}
+.tally{display:block;font-size:.875rem;color:var(--ink-muted);margin-top:.6rem;}
 
 .azbar{display:flex;flex-wrap:wrap;gap:.25rem;margin:1.5rem 0 2rem;}
 .azbar a{display:inline-flex;align-items:center;justify-content:center;
@@ -222,7 +222,7 @@ html:not(.js) .filterbar{position:static;}
 <header class="masthead">
   <div class="shell">
     <div class="brandbar" aria-hidden="true"></div>
-    <p class="eyebrow">Accessible Learning Labs</p>
+    <p class="eyebrow">Accessible Learning Labs · Accessibility</p>
     <h1>Glossary</h1>
     <p class="lede">Fifty-seven terms used across these resources, defined once so that every
       other page can link rather than re-explain.</p>
@@ -260,7 +260,7 @@ html:not(.js) .filterbar{position:static;}
       <button type="button" class="chip" data-cluster="at" aria-pressed="false">Assistive technology</button>
       <button type="button" class="chip" data-cluster="design" aria-pressed="false">Learning design and assessment</button>
     </div>
-    <p class="tally" id="tally" role="status" aria-live="polite">57 terms</p>
+    <output class="tally" id="tally">57 terms</output>
   </div>
 </div>
 
